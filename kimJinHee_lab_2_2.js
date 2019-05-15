@@ -16,8 +16,6 @@ const server = http.createServer((req, res) => {
             "resultCsv": null
         };
 
-
-
         if (err) {
             console.log(err);
             data.msg = "request err";

@@ -14,7 +14,7 @@ const authUtil = {
             success: false,
             message: message
         }
-    },
+    }
 };
 
 module.exports = authUtil;
