@@ -2,15 +2,6 @@ module.exports = {
     NULL_VALUE: "필요한 값이 없습니다",
     OUT_OF_VALUE: "파라미터 값이 잘못되었습니다",
 
-    MEMBERSHIP_SELECT_SUCCESS: "멤버십 조회 성공",
-    MEMBERSHIP_SELECT_FAIL: "멤버십 조회 실패",
-    MEMBERSHIP_INSERT_SUCCESS: "멤버십 삽입 성공",
-    MEMBERSHIP_INSERT_FAIL: "멤버십 삽입 실패",
-    MEMBERSHIP_UPDATE_SUCCESS: "멤버십 수정 성공",
-    MEMBERSHIP_UPDATE_FAIL: "멤버십 수정 실패",
-    MEMBERSHIP_TRANSAC_SUCCESS: "멤버십 트렌젝션 성공",
-    MEMBERSHIP_TRANSAC_FAIL: "멤버십 트렌젝션 실패",
-    
     NULL_VALUE: "값이 없습니다",
     OUT_OF_VALUE: "파라미터 값이 잘못되었습니다",
     ID_OR_PW_NULL_VALUE: "아이디/비밀번호 값이 없습니다.",
@@ -25,8 +16,10 @@ module.exports = {
 
     SAVE_SUCCESS: "데이터 저장 성공",
     SAVE_FAIL: "데이터 저장 실패",
-    READ_FAIL: "데이터 저장 실패",
-    
+    READ_FAIL: "데이터 조회 실패",
     ROAD_SUCCESS: "데이터 조회 성공",
-    ROAD_FAIL: "데이터 조회 실패",
+    DELETE_SUCCESS: "데이터 삭제 성공",
+    DELETE_FAIL: "데이터 삭제 실패",
+
+    BAD_REQUEST: "잘못된 요청"
 };
