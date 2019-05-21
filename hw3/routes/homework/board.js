@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
         if (selectBoardResult[0] == null) {
             res.status(200).send(util.successFalse(statusCode.NOT_FOUND, resMessage.NULL_VALUE));
         } else {
-            res.status(200).send(util.successTrue(statusCode.OK, resMessage.ROAD_SUCCESS));
+            res.status(200).send(util.successTrue(statusCode.OK, resMessage.ROAD_SUCCESS, selectBoardResult));
         }
     }
 });
@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
         const pwd = req.body.boardPw;
         const hashedPw = await crypto.pbkdf2(pwd.toString(), salt, 1000, 32, 'SHA512');
 
-        const writetime = moment().format('YYYYY-MM-DDTHH:mm:ss');
+        const writetime = moment().format('YYYYY-MM-DD HH:mm:ss');
 
         const insertBoardQuery = 'INSERT INTO board (writer, title, content, writetime, boardPw, salt) VALUES (?, ?, ?, ?, ?, ?)';
         const insertBoardResult = await pool.queryParam_Parse(insertBoardQuery,
